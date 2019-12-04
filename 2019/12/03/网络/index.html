@@ -10,11 +10,10 @@
 
     <!--Description-->
     
-        <meta name="description" content="网络思科设备
-网络定义将位于不同位置的计算机用不同的传输介质（有线、无线）、不同的网络设备连接起来，通过一些网络软件，最终实现资源共享的系统。
+        <meta name="description" content="网络定义将位于不同位置的计算机用不同的传输介质（有线、无线）、不同的网络设备连接起来，通过一些网络软件，最终实现资源共享的系统。
 发展1946第一台计算机（飞机订票）
 20世纪6、70年代第二代多个主机通信（美国军方阿帕网）NCP协议（传输控制）
-70-90年代第三代开放式的标准化计算">
+70-90年代第三代开放式的标准化计算机网络 ISO">
     
 
     <!--Author-->
@@ -169,8 +168,7 @@
         
 
         <!-- Post Content -->
-        <p>网络思科设备</p>
-<h1 id="网络定义"><a href="#网络定义" class="headerlink" title="网络定义"></a>网络定义</h1><p>将位于不同位置的计算机用不同的传输介质（有线、无线）、不同的网络设备连接起来，通过一些网络软件，最终实现资源共享的系统。</p>
+        <h1 id="网络定义"><a href="#网络定义" class="headerlink" title="网络定义"></a>网络定义</h1><p>将位于不同位置的计算机用不同的传输介质（有线、无线）、不同的网络设备连接起来，通过一些网络软件，最终实现资源共享的系统。</p>
 <h5 id="发展"><a href="#发展" class="headerlink" title="发展"></a>发展</h5><p>1946第一台计算机（飞机订票）</p>
 <p>20世纪6、70年代第二代多个主机通信（美国军方阿帕网）NCP协议（传输控制）</p>
 <p>70-90年代第三代开放式的标准化计算机网络 ISO（国际化标准组织）1984年颁布OSI模型</p>
@@ -229,7 +227,7 @@
 <p>ssh</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Router(config)#username lx password 123456</span><br><span class="line">Router(config)#ip domain-name lx.com 创建域名</span><br><span class="line">Router(config)#hostname lx </span><br><span class="line">Router(config)#crypto key generate rsa 启用rsa加密</span><br><span class="line">How many bits in the modulus [512]: 1024 1024位密码</span><br><span class="line">lx(config)#line vty 0 4</span><br><span class="line">lx(config-line)#exec-timeout  10 10 连接超时时间10分10秒</span><br><span class="line">lx(config-line)#logging synchronous 日志同步</span><br><span class="line">lx(config-line)#login local </span><br><span class="line">lx(config-line)#transport input ssh 只启用ssh</span><br><span class="line">验证：ssh -l +用户+IP</span><br></pre></td></tr></table></figure>
 
-<h2 id="交换机"><a href="#交换机" class="headerlink" title="交换机"></a>交换机</h2><h1 id="OSI七层模型"><a href="#OSI七层模型" class="headerlink" title="OSI七层模型"></a>OSI七层模型</h1><p><img src="jpg/1575342053427.png" alt="1575342053427"></p>
+<h2 id="交换机"><a href="#交换机" class="headerlink" title="交换机"></a>交换机</h2><h1 id="OSI七层模型"><a href="#OSI七层模型" class="headerlink" title="OSI七层模型"></a>OSI七层模型</h1><p><img src="jpg/006ZIQqwgy1g9jyu9vc95j30dr0ccwj8.jpg" alt="1575342053427"></p>
 <h4 id="物理层（比特）"><a href="#物理层（比特）" class="headerlink" title="物理层（比特）"></a>物理层（比特）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">功能：	建立、维护、断开物理连接。</span><br><span class="line">完成相邻结点之间原始比特流的传输</span><br><span class="line">光纤：光信号（光猫）</span><br><span class="line">双绞线：数字信号</span><br><span class="line">电话线：Modena（调制解调器）模拟信号</span><br></pre></td></tr></table></figure>
 
 <h4 id="数据链路层（帧）"><a href="#数据链路层（帧）" class="headerlink" title="数据链路层（帧）"></a>数据链路层（帧）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">建立逻辑连接、进行硬件地址寻址、差错校验等功能。（由底层网络定义协议）</span><br><span class="line">将比特组合成字节进而组合成帧，用MAC地址访问介质，错误发现但不能纠正。</span><br></pre></td></tr></table></figure>
