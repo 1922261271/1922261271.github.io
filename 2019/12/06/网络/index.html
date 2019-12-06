@@ -10,10 +10,10 @@
 
     <!--Description-->
     
-        <meta name="description" content="网络定义将位于不同位置的计算机用不同的传输介质（有线、无线）、不同的网络设备连接起来，通过一些网络软件，最终实现资源共享的系统。
-发展1946第一台计算机（飞机订票）
-20世纪6、70年代第二代多个主机通信（美国军方阿帕网）NCP协议（传输控制）
-70-90年代第三代开放式的标准化计算机网络 ISO">
+        <meta name="description" content="title: 网络date: 2019-12-07 16:51:44modified:  2019-12-07 16:51:44tag:
+
+网络定义
+思科设备">
     
 
     <!--Author-->
@@ -168,7 +168,14 @@
         
 
         <!-- Post Content -->
-        <h1 id="网络定义"><a href="#网络定义" class="headerlink" title="网络定义"></a>网络定义</h1><p>将位于不同位置的计算机用不同的传输介质（有线、无线）、不同的网络设备连接起来，通过一些网络软件，最终实现资源共享的系统。</p>
+        <p>title: 网络<br>date: 2019-12-07 16:51:44<br>modified:  2019-12-07 16:51:44<br>tag:</p>
+<ul>
+<li>网络定义</li>
+<li>思科设备</li>
+</ul>
+<a id="more"></a>
+
+<h1 id="网络定义"><a href="#网络定义" class="headerlink" title="网络定义"></a>网络定义</h1><p>将位于不同位置的计算机用不同的传输介质（有线、无线）、不同的网络设备连接起来，通过一些网络软件，最终实现资源共享的系统。</p>
 <h5 id="发展"><a href="#发展" class="headerlink" title="发展"></a>发展</h5><p>1946第一台计算机（飞机订票）</p>
 <p>20世纪6、70年代第二代多个主机通信（美国军方阿帕网）NCP协议（传输控制）</p>
 <p>70-90年代第三代开放式的标准化计算机网络 ISO（国际化标准组织）1984年颁布OSI模型</p>
@@ -250,6 +257,8 @@
 <h2 id="STP生成树协议"><a href="#STP生成树协议" class="headerlink" title="STP生成树协议"></a>STP生成树协议</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">解决环路，备份，负载均衡</span><br></pre></td></tr></table></figure>
 
 <h6 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h6><p>​    通过BPDU（桥协议单元）交换STP信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">BUDP类型</span><br><span class="line">1.开始</span><br><span class="line">2.链路状态变化</span><br></pre></td></tr></table></figure>
+
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">第一步：选择根网桥（root ID）</span><br><span class="line">	BID：优先级（默认32768= 8*4096）+MAC地址（小的优先级高）</span><br><span class="line">	Root ID    Priority    32769 （默认 + VLAN号）</span><br><span class="line">	Switch#show version   #看MAC</span><br><span class="line">	Base ethernet MAC Address       : 0002.4A69.CB52</span><br><span class="line">第二步：选择根端口</span><br><span class="line">	cost值</span><br><span class="line">	f（100M） 19</span><br><span class="line">	10M		100</span><br><span class="line">	1G		4</span><br><span class="line">	10G		2</span><br><span class="line">	对端网桥BID</span><br><span class="line">	对端端口优先级（128）</span><br><span class="line">第三步：选择指定端口</span><br><span class="line">	根桥上全是指定端口</span><br><span class="line">	路径成本</span><br><span class="line">	端口的网桥的（BID）</span><br><span class="line">	端口优先级 #默认128</span><br><span class="line">		Switch(config)#int f0/1</span><br><span class="line">		Switch(config-if)#spanning-tree vlan 10 port-priority 32 #16的倍数</span><br><span class="line">第四步：阻塞端口</span><br></pre></td></tr></table></figure>
 
 <h6 id="端口状态"><a href="#端口状态" class="headerlink" title="端口状态"></a>端口状态</h6><p><img src="https://tvax1.sinaimg.cn/large/006ZIQqwgy1g9ms4dtr3xj30g705s3yx.jpg" alt="1575528655926"></p>
@@ -269,7 +278,9 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">开启聚合端口编号为1： interface port-channel 1 #1-6接口</span><br><span class="line">三层交换机需要封装：sw tr en do</span><br><span class="line">switchport mode trunk</span><br><span class="line">选择接口：interface range f0/7-6</span><br><span class="line">选泽模式：channel-group 1 mode on</span><br><span class="line">	active Enable LACP unconditionally #主动</span><br><span class="line">	auto Enable PAgP only if a PAgP device is detected#被动</span><br><span class="line">	desirable Enable PAgP unconditionally#主动</span><br><span class="line">	on Enable Etherchannel only#单独 手动设置</span><br><span class="line">	passive Enable LACP only if a LACP device is detected被动</span><br><span class="line">查看：SW3#show interfaces etherchannel</span><br><span class="line">	SW3#show etherchannel port-channel </span><br><span class="line">	#如果先聚合再设置的trunk保存重启即可</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://tva2.sinaimg.cn/large/006ZIQqwgy1g9ms554cznj30jc0a0mxc.jpg" alt="1575533823409"></p>
-<h2 id="HSRP网关热备份"><a href="#HSRP网关热备份" class="headerlink" title="HSRP网关热备份"></a>HSRP网关热备份</h2><p>两个交换机进行网关备份</p>
+<h2 id="HSRP网关份路由"><a href="#HSRP网关份路由" class="headerlink" title="HSRP网关份路由"></a>HSRP网关份路由</h2><p>HSRP思科私有 #热备份路由协议</p>
+<p>VRRP #标准</p>
+<p>两个交换机进行网关备份</p>
 <p>两个交换机分别设置网关，一个备份，优先级高的会使用，但是用的是standby设置的虚拟地址</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">int vlan 10</span><br><span class="line">standby 10 ip 172.16.15.120 #两个网关虚拟的（PC上输的网关）</span><br><span class="line">standby 10 priority 120 #优先级默认为100</span><br><span class="line">standby 10 preempt #设置为抢占</span><br><span class="line">standby times 3 10hello #时间和保持时间</span><br><span class="line">standby 10 track FastEthernet0/3 #链接的端口</span><br></pre></td></tr></table></figure>
 
