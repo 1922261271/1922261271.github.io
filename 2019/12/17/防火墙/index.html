@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/12 | 刘新</title>
+  <title>防火墙 | 刘新</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="刘新">
-<meta property="og:url" content="http://yoursite.com/archives/2019/12/index.html">
+  <meta name="description" content="##">
+<meta name="keywords" content="分类,部署方式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="防火墙">
+<meta property="og:url" content="http://yoursite.com/2019/12/17/防火墙/index.html">
 <meta property="og:site_name" content="刘新">
+<meta property="og:description" content="##">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2020-01-26T04:20:49.395Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="刘新">
+<meta name="twitter:title" content="防火墙">
+<meta name="twitter:description" content="##">
   
     <link rel="alternative" href="/atom.xml" title="刘新" type="application/atom+xml">
   
@@ -150,78 +155,241 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-防火墙" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/26/Linux/" class="archive-article-date">
-  	<time datetime="2019-12-26T08:51:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-26</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/26/Linux/">Linux</a>
+    <h1 class="article-title" itemprop="name">
+      防火墙
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">用户</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">服务</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/17/防火墙/" class="archive-article-date">
+        
+        <a href="/2019/12/17/防火墙/" class="archive-article-date">
   	<time datetime="2019-12-17T09:51:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-17</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/17/防火墙/">防火墙</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>## </p>
+<a id="more"></a>
 
-        <div class="article-info info-on-right">
-          
+<h2 id="防火墙（IPX）"><a href="#防火墙（IPX）" class="headerlink" title="防火墙（IPX）"></a>防火墙（IPX）</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><ol>
+<li><p>控制：在网络连接点上建立一个安全控制点，对进出的数据进行限制(包过滤)</p>
+</li>
+<li><p>隔离：将需要保护的网络与不可信任网络进行隔离，隐藏信息并进行安全防护</p>
+</li>
+<li><p>记录：对进出数据进行检查，记录相关信息</p>
+</li>
+<li><p>在网络协议栈的各个层次上实施网络访问控制机制</p>
+<p>​     网络层：包过滤</p>
+<p>​     传输层：电路级代理</p>
+<p>​     应用层：应用层代理/网关</p>
+</li>
+<li><p>基本功能：控制在计算机网络中不同信任程度网络域间传送的数据流</p>
+<ul>
+<li>检查控制进出网络的网络流量</li>
+<li>防止脆弱或不安全的协议和服务</li>
+<li>防止内部网络信息的外泄</li>
+<li>对网络存取和访问进行监控审计</li>
+<li>防火墙可以强化网络安全策略并集成其他安全防御机制</li>
+</ul>
+</li>
+</ol>
+<h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><ol>
+<li><p>按防火墙形态</p>
+<ul>
+<li>硬件防火墙（天融信，深信服，绿盟，知道创宇，启明星辰，卫士通）</li>
+<li>软件防火墙（ISA,瑞星，诺顿）</li>
+</ul>
+</li>
+<li><p>按技术实现</p>
+<ul>
+<li><p>包过滤防火墙（透明模式）</p>
+<ol>
+<li>工作在网络层</li>
+<li>网络层地址：IP地址（源地址及目的地址）</li>
+<li>传输层协议：端口（源端口及目的端口）</li>
+<li>协议：协议类型</li>
+</ol>
+</li>
+<li><p>电路级代理防火墙</p>
+<p>​    应用层：应用层代理（HTTP代理）</p>
+<p>​    传输层：电路级代理（Socks代理）</p>
+<p>​    网络层：NAT代理（NAT网关，                拨号上网路由器，VPN）</p>
+</li>
+<li><p>应用层代理/网关防火墙</p>
+</li>
+</ul>
+<p>代理实际上也是一种安全防护技术</p>
+<ul>
+<li>允许客户端通过代理与网络服务进行非直接的连接</li>
+<li>在代理服务器上可以进行访问控制和内容检查</li>
+</ul>
+</li>
+<li><p>按体系结分</p>
+<ul>
+<li>双宿/多宿主机防火墙</li>
+<li>屏蔽主机防火墙</li>
+<li>屏蔽子网防火墙</li>
+</ul>
+</li>
+<li><p>其他分类方法</p>
+</li>
+</ol>
+<h3 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h3><p>​    优点：</p>
+<ol>
+<li>只对数据包的IP地址、TCP/UDP协议和端口进行分析，规则简单，处理速度较快</li>
+<li>易于配置</li>
+<li>头对用户透明，用户访问时不需要提供额外的密码或使用特殊的命令</li>
+</ol>
+<p>​    缺点：</p>
+<ol>
+<li>检查和过滤器只在网络层，不能识别应用层协议或维持连接状态</li>
+<li>安全性薄弱，不能防止IP欺骗等</li>
+<li>正确制定规则并不容易</li>
+<li>不可能引入认证机制</li>
+</ol>
+<p>​    不足：</p>
+<ol>
+<li><p>必作为网络边界防护机制而先天无法防范的安全威<br>胁</p>
+<ul>
+<li>来自网络内部的安全威胁()</li>
+<li>通过非法外联的网络攻击</li>
+<li>计算机病毒传播</li>
+</ul>
+</li>
+<li><p>必由于技术瓶颈问题目前还无法有效防范的安全威胁</p>
+<ul>
+<li><p>针对开放服务安全漏洞的渗透攻击</p>
+</li>
+<li><p>针对网络客户端程序的渗透攻击</p>
+</li>
+<li><p>基于隐蔽通道进行通信的特洛伊木马或僵尸网络</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="技术"><a href="#技术" class="headerlink" title="技术"></a>技术</h3><h4 id="应用层代理"><a href="#应用层代理" class="headerlink" title="应用层代理"></a>应用层代理</h4><ol>
+<li>概念：也称应用层网关，代理服务器,特定应用层网络服务（HTTP/Email…）</li>
+<li>优势<ul>
+<li>隐藏内部网络信息</li>
+<li>通讯中转，严格内容审查</li>
+<li>存储转发机制，在线审计</li>
+<li>用户级身份验证机制</li>
+</ul>
+</li>
+<li>应用层代理不足<ul>
+<li>不通用，不透明，处理速度较慢，部署代价较高</li>
+</ul>
+</li>
+</ol>
+<h4 id="电路级代理"><a href="#电路级代理" class="headerlink" title="电路级代理"></a>电路级代理</h4><ol>
+<li>电路级代理<ul>
+<li>工作在传输层</li>
+<li>同时为多种不同的应用服务提供支持</li>
+</ul>
+</li>
+<li>工作机制<ul>
+<li>TPC层中继</li>
+<li>建立外部连接，并在连接会话间转发数据</li>
+</ul>
+</li>
+<li>差异:通用、用户级身份认证，但无法进行细致内容审查</li>
+</ol>
+<h4 id="NAT"><a href="#NAT" class="headerlink" title="NAT"></a>NAT</h4><ol>
+<li><p>概念：<br>一种将私有(保留)地址转化为合法IP地址的转换技术，它被广泛应用于各种类Internet接入方式和各种类型的网络中。</p>
+</li>
+<li><p>NAT技术设计初衷</p>
+<ul>
+<li>增加私有组织的可用地址空间</li>
+<li>解决现有私有网络接入的IP地址编号问题</li>
+</ul>
+</li>
+<li><p>网络地址转换</p>
+<ol>
+<li>NAT(网络地址转换)<ul>
+<li>允许多个用户分享少量或单士IP地址(源NAT)</li>
+<li>允许将网络服务映射到内部服务网络IP和端口(目的NAT)</li>
+</ul>
+</li>
+<li>NAT代理优势<ul>
+<li>方便:任意使用私有网段IP地址，无需申请，无冲突</li>
+<li>安全:对外隐藏内部网络信息</li>
+</ul>
+</li>
+<li>实现方式<ul>
+<li>静态地址转换</li>
+<li>动态地址转换</li>
+<li>端口转换 </li>
+</ul>
+</li>
+<li>优缺点<ol>
+<li>优点<ul>
+<li>管理方便并且节约IP地址资源</li>
+<li>隐藏内部IP地址信息</li>
+<li>可用于实现网络负载均衡</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>外部应用程序却不能方便地与NAT网关后面的应用程序联系。</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<h4 id="状态检测"><a href="#状态检测" class="headerlink" title="状态检测"></a>状态检测</h4><ol>
+<li>在数据链路层和网络层之间对数据包进行检测</li>
+<li>创建动态状态表用于维护连接上下文</li>
+<li>特点：<ul>
+<li>安全性高，可根据通信和应用程序状态确定是否允许包的通行</li>
+<li>性能高，在数据包进入防火墙时就进行识别和判断</li>
+<li>适应性好</li>
+<li>对用户、应用程序透明</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="部署方式"><a href="#部署方式" class="headerlink" title="部署方式"></a>部署方式</h3><h4 id="路由模式"><a href="#路由模式" class="headerlink" title="路由模式"></a>路由模式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">防火墙位于内部网络和外部网络之间时，需要将防火墙与内部网络、外部网络以及DMZ 三个区域相连的接口分别配置成不同网段的IP 地址，重新规划原有的网络拓扑，此时相当于一台路由</span><br><span class="line">采用路由模式时，可以完成ACL 包过滤、ASPF 动态过滤、NAT 转换等功能</span><br></pre></td></tr></table></figure>
+
+<h4 id="透明模式"><a href="#透明模式" class="headerlink" title="透明模式"></a>透明模式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">若防火墙通过第二层对外连接（接口无IP 地址），则防火墙工作在透明模式下</span><br></pre></td></tr></table></figure>
+
+<h4 id="混合模式"><a href="#混合模式" class="headerlink" title="混合模式"></a>混合模式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">如果防火墙既存在工作在路由模式的接口（接口具有IP 地址），又存在工作在透明模式的接口（接口无IP 地址），则防火墙工作在混合模式下</span><br><span class="line">混合模式主要用于透明模式作双机备份的情况</span><br></pre></td></tr></table></figure>
+
+<h3 id="基本配置"><a href="#基本配置" class="headerlink" title="基本配置"></a>基本配置</h3>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -237,46 +405,115 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/17/防火墙/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/06/lx/" class="archive-article-date">
-  	<time datetime="2019-12-06T06:11:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-06</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2019/12/26/Linux/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Linux
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/12/06/lx/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">lx</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/06/lx/">lx</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -299,8 +536,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
